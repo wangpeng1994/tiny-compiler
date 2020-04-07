@@ -82,7 +82,7 @@ function transformer (ast) {
           },
           arguments: []
         };
-        // 继续在节点上引用自新的父节点上的参数数组，方便等到遍历器遍历参数的时候进行 push
+        // 继续在节点上引用自新的父节点上的参数数组，方便等到访问器遍历参数的时候进行 push
         node._context = expression.arguments;
         // 父节点不是 CallExpression （那就是 Program）时包裹一层节点
         // 因为 JS 中的顶级调用其实是表达式语句

@@ -16,7 +16,7 @@
  */
 
 /**
- * 遍历器，触发 visitor 上定义的钩子函数，depth-first
+ * 访问器，触发 visitor 上定义的钩子函数，depth-first
  *
  * @param ast 抽象语法树
  * @param visitor {object} 访问者，其中根据 node 类型不同定义了一些方法，
